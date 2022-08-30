@@ -11,6 +11,8 @@ library(RColorBrewer)
 library(VennDiagram)
 library(ggVennDiagram)
 library(ggplot2)
+py_install("pandas")
+
 #Importing all pickle files for top 10
 pd <- import("pandas")
 grp1_grp2_sub <- pd$read_pickle("DataMatrixGrp2_Grp1.pickle")
